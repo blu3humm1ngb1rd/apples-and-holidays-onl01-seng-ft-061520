@@ -109,7 +109,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |season, seasonal_hashes|
     puts season
-    puts seasonal_hashes[]
+    puts seasonal_hashes.flatten 
   end 
 end
 
