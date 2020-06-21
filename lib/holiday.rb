@@ -140,12 +140,14 @@ def all_holidays_with_bbq(holiday_hash)
      }
    }
    
-   holiday_hash.each do |season, seasonal_hashes|
-     if seasonal_hashes.has_value?("BBQ")
-       puts seasonal_hashes
+   holiday_hash[]
    
- end 
-   end 
+#   holiday_hash.each do |season, seasonal_hashes|
+#     if seasonal_hashes.has_value?("BBQ")
+#       puts seasonal_hashes
+   
+# end 
+#   end 
 end
 
 
