@@ -142,9 +142,12 @@ def all_holidays_with_bbq(holiday_hash)
    
    holiday_hash.each do |season, seasonal_hashes|
     
-     if seasonal_hashes.has_value?("BBQ")
-       puts seasonal_hashes
-   
+    seasonal_hashes.each_value do |bbq_search|
+    if   bbq_search.include?("BBQ")
+      puts seasonal_hashes
+    #if seasonal_hashes.has_value?("BBQ")
+      # puts seasonal_hashes
+      end  
      end 
    end 
 end
