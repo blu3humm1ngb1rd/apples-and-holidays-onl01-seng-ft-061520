@@ -41,23 +41,17 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
      }
    }
   
-   holiday_hash.each do |season, seasonal_hashes|
-     if season = :summer 
-  binding.pry      
-     end 
-   end
+   
   
-  
-  
-   # holiday_hash.each do |season, seasonal_hashes|
-     #  if season = :winter 
-    #     seasonal_hashes.each do |winter_holiday,supply_array|
-    #       supply_array << supply
+    holiday_hash.each do |season, seasonal_hashes|
+       if season = :winter 
+        seasonal_hashes.each do |winter_holiday,supply_array|
+          supply_array << supply
            
-    #     end 
-    #   end
+        end 
+      end
   
-    # end 
+    end 
 end
 
 
