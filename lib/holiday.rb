@@ -126,7 +126,7 @@ def all_holidays_with_bbq(holiday_hash)
   
   holiday_hash.each do |season, seasonal_hashes|
     seasonal_hashes.each do |holiday, supply_array|
-       supply_array.include?("BBQ")
+      if supply_array.include?("BBQ")
         
         puts holiday 
       end 
