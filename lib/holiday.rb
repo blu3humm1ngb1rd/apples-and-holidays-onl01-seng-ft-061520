@@ -110,7 +110,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, seasonal_hashes|
       "#{season}"
     seasonal_hashes.each do |holiday, supplies|
-      "#{holiday.flatten}: #{supplies}"
+      "#{holiday}: #{supplies}"
     end 
   end 
 end
