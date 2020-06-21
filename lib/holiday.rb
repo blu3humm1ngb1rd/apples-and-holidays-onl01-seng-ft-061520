@@ -110,7 +110,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, seasonal_hashes|
     puts season 
     puts season.values.flatten 
-    binding.pry 
+binding.pry 
   end 
 end
 
