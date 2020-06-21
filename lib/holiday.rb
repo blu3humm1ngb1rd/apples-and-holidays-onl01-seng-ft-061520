@@ -108,9 +108,9 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   holiday_hash.each do |season, seasonal_hashes|
-
+      season.flatten
     seasonal_hashes.each do |holiday, supplies|
-      [seasonal_hashes][holiday][supplies]
+      "#{holiday.flatten}: #{supplies}"
     end 
   end 
 end
